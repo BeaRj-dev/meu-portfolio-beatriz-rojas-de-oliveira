@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const key = keyInput.value;
         const text = messageInput.value;
 
-        if (!key || !text) return alert("Preencha todos os campos!");
+        if (!key || !text) return alert("Preencha todos os campos.");
 
         const encrypted = xorCipher(text, key);
         // Transforma em Base64 para exibir com segurança
