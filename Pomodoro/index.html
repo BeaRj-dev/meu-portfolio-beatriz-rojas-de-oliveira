@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Plant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-app">
+        <section id="tela-menu" class="tela">
+            <h1 class="titulo">Tempo de Foco</h1>
+            <div class="grade-botoes">
+                <button class="botao-tempo" onclick="iniciarPomodoro(25)">25 minutos</button>
+                <button class="botao-tempo" onclick="iniciarPomodoro(20)">20 minutos</button>
+                <button class="botao-tempo" onclick="iniciarPomodoro(15)">15 minutos</button>
+                <button class="botao-tempo" onclick="iniciarPomodoro(10)">10 minutos</button>
+            </div>
+        </section>
+
+        <section id="tela-timer" class="tela escondido">
+            <div class="container-status">
+                <h2 id="texto-status">FOCO</h2>
+                <span id="etiqueta-pausa" class="badge escondido"></span>
+            </div>
+            
+            <div class="area-visual">
+                <div id="exibicao-planta">🌰</div>
+            </div>
+
+            <div class="timer-numeros" id="timer-numeros">00:00</div>
+
+            <div class="controles">
+                <button id="botao-pausar" class="botao-controle principal" onclick="alternarPausa()">Pausar</button>
+                <button class="botao-controle" onclick="voltarAoMenu()">Menu</button>
+            </div>
+        </section>
+
+        <section id="tela-parabens" class="tela escondido">
+            <div class="cartao-final">
+                <div class="icone-final">💐</div>
+                <h2>Parabéns!</h2>
+                <p>Você completou todo o seu ciclo de estudos com sucesso.</p>
+                <button class="botao-tempo" onclick="voltarAoMenu()">Voltar ao Menu</button>
+            </div>
+        </section>
+    </div>
+
+    <div id="modal-aviso" class="modal escondido">
+        <div class="conteudo-modal">
+            <div class="icone-modal">🔔</div>
+            <p id="mensagem-modal">Descanso finalizado!</p>
+            <button class="botao-controle principal" onclick="fecharModal()">OK</button>
+        </div>
+    </div>
+<footer class="rodape">
+    <span>Pomodoro &copy; 2026</span>
+    <span> - Desenvolvido por Beatriz Rojas</span>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>

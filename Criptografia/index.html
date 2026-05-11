@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptografia Moderna</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Criptografia</h1>
+
+        <div class="input-group">
+            <label>CHAVE MESTRA</label>
+            <input type="password" id="key" placeholder="Insira sua senha...">
+        </div>
+
+        <div class="input-group">
+            <label>MENSAGEM OU CÓDIGO HEX</label>
+            <textarea id="inputData" rows="5" placeholder="Texto para processar..."></textarea>
+        </div>
+
+        <div class="button-container">
+            <button id="btnEncrypt" class="btn-primary">Criptografar</button>
+            <button id="btnDecrypt" class="btn-secondary">Descriptografar</button>
+        </div>
+
+        <div class="input-group">
+            <label>RESULTADO</label>
+            <textarea id="outputData" rows="5" readonly></textarea>
+        </div>
+    </div>
+
+    <footer class="rodape">
+        <span>Criptografador &copy; 2026</span>
+        <span>- Desenvolvido por Beatriz Rojas</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
