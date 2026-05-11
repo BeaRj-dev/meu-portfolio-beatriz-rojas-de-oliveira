@@ -55,9 +55,9 @@ input, select {
     background: var(--input-bg);
     border: 1px solid var(--input-border);
     color: var(--text-primary);
-    padding: 15px; /* Maior para mobile */
+    padding: 15px;
     outline: none;
-    font-size: 16px; /* Evita zoom automático no iOS */
+    font-size: 16px;
 }
 
 button {
@@ -74,7 +74,6 @@ button {
 
 .btn-secondary { background-color: transparent; color: var(--text-primary); border: 1px solid var(--sidebar-border); font-size: 10px; }
 
-/* Main Content */
 main { flex: 1; padding: 40px; display: flex; flex-direction: column; }
 
 .dashboard {
@@ -122,7 +121,7 @@ main { flex: 1; padding: 40px; display: flex; flex-direction: column; }
 .total-bar { font-size: 36px; font-weight: 900; margin-bottom: 20px; }
 footer { border-top: 1px solid var(--sidebar-border); padding-top: 20px; font-size: 10px; opacity: 0.4; }
 
-/* CORES */
+/* Cores */
 .cat-COMIDA { background-color: var(--color-comida); }
 .cat-TRANSPORTE { background-color: var(--color-transporte); }
 .cat-SAUDE { background-color: var(--color-saude); }
@@ -131,7 +130,7 @@ footer { border-top: 1px solid var(--sidebar-border); padding-top: 20px; font-si
 .cat-FATURA { background-color: var(--color-fatura); }
 .cat-OUTROS { background-color: var(--color-outros); }
 
-/* --- MEDIA QUERIES (MOBILE) --- */
+/* Media */
 @media (max-width: 900px) {
     body { flex-direction: column; }
     aside { width: 100%; border-right: none; border-bottom: 1px solid var(--sidebar-border); padding: 30px 20px; }

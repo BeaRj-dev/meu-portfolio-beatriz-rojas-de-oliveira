@@ -7,7 +7,7 @@ let tempoRestante;
 let tempoTotalFase;
 let tempoEstudoOriginal;
 let estaPausado = true;
-let modoAtual = 'foco'; // foco ou descanso
+let modoAtual = 'foco'; // Foco ou descanso
 let contagemFoco = 0;
 
 const telaMenu = document.getElementById('tela-menu');

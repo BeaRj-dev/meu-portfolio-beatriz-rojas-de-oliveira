@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const key = keyInput.value;
         const text = messageInput.value;
 
-        if (!key || !text) return alert("Preencha todos os campos!");
+        if (!key || !text) return alert("Preencha todos os campos.");
 
         try {
             // Decodifica de Base64 e reverte o XOR
